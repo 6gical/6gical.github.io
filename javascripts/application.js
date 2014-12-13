@@ -40,6 +40,7 @@ $(function() {
     if (currentAudio !== null) {
       pauseCurrentSong($currentButton);
     }
+
     currentAudio = audios[index];
     playAudio(currentAudio);
 
@@ -61,8 +62,13 @@ $(function() {
   }
 
   function playAudio(audio) {
-    audio.skipTo(0);
-    audio.setVolume(0);
+    try {
+      audio.skipTo(0.000001);
+      audio.setVolume(0);
+    } catch (e) {
+      console.log('Failed to seek to start');
+    }
+
     audio.play();
     setTimeout(function() {
       audio.setVolume(1);
