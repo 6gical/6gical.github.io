@@ -76,11 +76,9 @@ $(function() {
   }
 
   function showPlayIcon($icon) {
-//    $icon.removeClass('octicon-primitive-square');
     $icon.addClass('octicon octicon-playback-play track-playing-icon');
   };
   function showPauseIcon($icon) {
     $icon.removeClass('octicon octicon-playback-play track-playing-icon');
-//    $icon.addClass('octicon-primitive-square');
   };
 });
