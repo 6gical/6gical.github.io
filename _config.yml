@@ -1,0 +1,13 @@
+# Site settings
+title: ロジカルオシレーターOfficial Homepage
+email: logicaloscillator@gmail.com
+description: >
+  都内で活動する、女性ボーカルバンド　「ロジカルオシレーター」　です。
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://http://logical-oscillator.github.io/"
+twitter_username: 
+github_username:  
+
+# Build settings
+markdown: kramdown

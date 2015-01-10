@@ -1,45 +1,72 @@
-body {
-    background-color: #FFFFFF;
-    margin-left:   0px;
-    margin-top:    0px;
-    margin-right:  0px;
-    margin-bottom: 0px;
+/* centering navbar */
+@media screen and (min-width: 767px) {
+    .img-responsive-overwrite {
+        margin: 0 auto;
+    }
+
+    .sitename {
+        margin:15px 0 15px;
+    }
+    .sitename a {
+        font-size: 1.6em;
+        color: inherit;
+    }
+
+    i {
+        font-size: 1.3em;
+        color: inherit;
+    }
+
+    .navbar .navbar-inner {
+        padding: 0;
+    }
+
+    .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 80%;
+    }
+
+    .navbar .nav li {
+        display: table-cell;
+        float: none;
+    }
+
+    .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255, 255, 255, .75);
+        border-right: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+    }
+
+    body > .container {
+        padding-top: 60px;
+    }
+
+    .footer {
+    }
 }
-body,td,th {
-    font-size:12px;
-    color:#555555;
-    line-height:150%;
-    font-family:Verdana;
+.rssBody ul {
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+.rssBody ul li{
+    list-style-type: none;
 }
 
-a:link    {text-decoration:underline; color:#000000;}
-a:visited {text-decoration:underline; color:#000000;}
-a:active  {text-decoration:underline; color:#000000;}
-a:hover   {text-decoration:underline; color:#000000;}
-
-.lin2 a:link    {color:#666666; text-decoration:none;}
-.lin2 a:visited {color:#606060; text-decoration:none;}
-.lin2 a:active  {color:#606060; text-decoration:underline;}
-.lin2 a:hover   {color:#606060; text-decoration:underline;}
-
-.color1 {background-color:#808080;}
-.color2 {background-color:#FFFFFF;}
-.color3 {background-color:#C0C0C0;}
-.color4 {background-color:#E4E4E4;}
-
-.text1     {
-    font-size:24px;
-    color:#C0C0C0;
-    line-height:140%;
-    font-family:Verdana;
-    font-weight:bold;
+/* for profile page */
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
-.waku1 {
-    border-color:#C0C0C0;
-    border-width:1px;
-    border-style:solid;
-}
+/* trial tracks */
 
 #trial-tracks {
 }
@@ -61,6 +88,7 @@ a:hover   {text-decoration:underline; color:#000000;}
     width: 30px;
     text-align: center;
 }
+
 
 @keyframes turn {
     0%   {transform: rotateY(0deg);}
