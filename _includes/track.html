@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-12 vcenter">
+    <button type="button"
+            class="btn btn-default play-button vcenter"
+            aria-label="Left Align"
+            data-index="{{ include.index }}">
+      <span class="glyphicon glyphicon-stop"
+            aria-hidden="true"></span>
+    </button>
+    <span class="track-label">
+      {% if include.index < 10 %}
+      &nbsp;{{ include.index }}.
+      {% else %}
+      {{ (include.index)) }}.
+      {% endif %}
+    </span>
+    <span class="track-label">{{ include.name }}</span>
+  </div>
+  <audio src="trial_tracks/{{ include.index }}.mp3"></audio>
+</div>

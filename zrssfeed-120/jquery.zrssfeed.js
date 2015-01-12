@@ -34,7 +34,7 @@
 			limit: 10,
 			offset: 1,
 			header: true,
-			titletag: 'h4',
+			titletag: 'h5',
 			date: true,
 			dateformat: 'datetime',
 			content: true,
@@ -126,9 +126,12 @@
 		
 		// Add header if required
 		if (options.header)
-			html +=	'<div class="rssHeader">' +
+			html +=//	'<div >' +
+/* customization for logical oscillator official homepage */
+			'<h3 class="home-widget-title"><span class="label label-success">' +
 				'<a href="'+feeds.link+'" title="'+ feeds.description +'">'+ feeds.title +'</a>' +
-				'</div>';
+			'</span></h3>';// +
+//				'</div>';
 			
 		// Add body
 		html += '<div class="rssBody">' +
@@ -184,7 +187,9 @@
 			
 			// Add feed row
 			if (options.linkredirect) feedLink = encodeURIComponent(feedLink);
-			rowArray[rowIndex]['html'] = '<'+ options.titletag +'><a href="'+ options.linkredirect + feedLink +'" title="View this feed at '+ feeds.title +'">'+ entry.title +'</a></'+ options.titletag +'>'
+			rowArray[rowIndex]['html'] = '<'+ options.titletag + '>' +
+        '<span class="glyphicon glyphicon-leaf"></span>' +
+        '<a href="'+ options.linkredirect + feedLink +'" title="View this feed at '+ feeds.title +'">'+ entry.title +'</a></'+ options.titletag +'>'
 
 			if (options.date && pubDate) rowArray[rowIndex]['html'] += '<div>'+ pubDate +'</div>'
 			if (options.content) {
@@ -248,7 +253,9 @@
 		// Add rows to output
 		$.each(rowArray, function(e) {
 
-			html += '<li class="rssRow '+row+'">' + rowArray[e]['html'] + '</li>';
+			html += '<li class="rssRow '+row+'">' +
+        rowArray[e]['html'] +
+        '</li>';
 
 			// Alternate row classes
 			if (row == 'odd') {

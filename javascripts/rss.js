@@ -1,5 +1,6 @@
 $(function() {
   $('#rss').rssfeed('http://feedblog.ameba.jp/rss/ameblo/logical-oscillator', {
-    limit: 5
+    limit: 5,
+    date: false
   });
 });

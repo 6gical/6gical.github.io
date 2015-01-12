@@ -52,11 +52,18 @@
     }
 }
 
-/** RSS widget */
-.rssHeader {
-    width: 100%;
-    background-image: url("../images/blog_bg.png");
+.home-widget-title {
+    margin-top: 0px;
 }
+.home-widget-title span a {
+    color: white;
+}
+.link-list {
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+/** RSS widget */
 .rssBody ul {
     margin: 0 0 0 1em;
     padding: 0;
@@ -73,12 +80,12 @@
 }
 
 /* trial tracks */
-
-.track-number-label {
-    width: 30px;
-    text-align: center;
+.track-label {
+    margin-left: 5px;
 }
 
+.play-button {
+}
 
 @keyframes turn {
     0%   {transform: rotateY(0deg);}

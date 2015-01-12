@@ -1,0 +1,3 @@
+{% if include.type == page.type %}
+class="active"
+{% endif %}
