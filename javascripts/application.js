@@ -76,9 +76,11 @@ $(function() {
   }
 
   function showPlayIcon($icon) {
-    $icon.addClass('octicon octicon-playback-play track-playing-icon');
+    $icon.removeClass('glyphicon-stop');
+    $icon.addClass('glyphicon-play');
   };
   function showPauseIcon($icon) {
-    $icon.removeClass('octicon octicon-playback-play track-playing-icon');
+    $icon.removeClass('glyphicon-play');
+    $icon.addClass('glyphicon-stop');
   };
 });

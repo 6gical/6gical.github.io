@@ -51,6 +51,12 @@
     .footer {
     }
 }
+
+/** RSS widget */
+.rssHeader {
+    width: 100%;
+    background-image: url("../images/blog_bg.png");
+}
 .rssBody ul {
     margin: 0 0 0 1em;
     padding: 0;
@@ -67,22 +73,6 @@
 }
 
 /* trial tracks */
-
-#trial-tracks {
-}
-
-.track-icon {
-    display: table-cell;
-    width: 32px;
-    height: 32px;
-    background-image: url("../images/track.jpg");
-    text-align: center;
-    vertical-align: middle;
-}
-
-.track-playing-icon {
-    font-size: 24px;
-}
 
 .track-number-label {
     width: 30px;
