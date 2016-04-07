@@ -52,6 +52,13 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .img-responsive-overwrite {
+        margin: 0 auto;
+        padding: 0 50px 0 50px;
+    }
+}
+
 .home-widget-title {
     margin-top: 0px;
 }
@@ -61,6 +68,15 @@
 .link-list {
     list-style-type: none;
     list-style-position: outside;
+}
+
+.nav-image-container {
+    padding: 0;
+}
+
+.nav-image {
+    margin-left: 12px;
+    height: 100%;
 }
 
 /** RSS widget */

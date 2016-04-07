@@ -6,7 +6,7 @@ description: >
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://http://logical-oscillator.github.io/"
-twitter_username: logical-oscillator
+twitter_username: 6gical
 github_username: logical-oscillator
 mirror_ga_tracking_id: "UA-58426382-2"
 production_ga_tracking_id: "UA-58426382-1"
